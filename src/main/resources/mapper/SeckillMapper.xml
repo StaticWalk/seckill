@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxy.dao.SeckillMapper">
+    <resultMap id="SeckillMap" type="Seckill">
+        <result property="seckillId" column="seckill_Id"/>
+        <result property="name" column="name"/>
+        <result property="number" column="number"/>
+        <result property="startTime" column="start_time"/>
+        <result property="endTime" column="end_time"/>
+        <result property="createTime" column="create_time"/>
+    </resultMap>
+</mapper>
