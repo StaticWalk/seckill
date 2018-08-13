@@ -17,6 +17,7 @@ import java.util.Map;
 
 @Repository
 public interface SeckillMapper {
+
 	/**
 	 * 减库存
 	 *

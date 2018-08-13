@@ -12,6 +12,7 @@ import org.springframework.stereotype.Repository;
  * Data:2018/8/13
  * Time:10:58
  */
+
 @Repository
 public interface SuccessKilledMapper {
 	/**
@@ -34,7 +35,7 @@ public interface SuccessKilledMapper {
 	 */
 	@Select("SELECT sk.*,s.seckill_id as s_seckill_id,s.name,s.number,s.start_time,s.end_time,s.create_time as s_create_time " +
 			"FROM success_killed sk INNER JOIN seckill s ON s.seckill_id = sk.seckill_id WHERE sk.seckill_id=#{seckillId} AND sk.user_phone=#{userPhone}")
-	@ResultMap("org.redin.seckill.dao.SuccessKilledMapper.SuccessKilledMap")
+	@ResultMap("com.xxy.dao.SuccessKilledMapper.SuccessKilledMap")
 	SuccessKilled queryByIdWithSeckill(@Param("seckillId") long seckillId, @Param("userPhone") long userPhone);
 
 }
