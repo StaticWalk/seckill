@@ -40,7 +40,6 @@ public class SeckillController {
 
 	/**
 	 * 秒杀详情
-	 *
 	 * @param seckillId
 	 * @param model
 	 * @return
