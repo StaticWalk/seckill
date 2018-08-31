@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RedisBean {
 
+	//在spring运行期使用的话可以通过bean注入
 	@Bean
 	public RedisDao redisDao(@Value("${spring.redis.host}") String ip, @Value("${spring.redis.port}") Integer port){
 		return new RedisDao(ip,port);

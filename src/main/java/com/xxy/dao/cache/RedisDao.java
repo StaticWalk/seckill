@@ -36,8 +36,9 @@ public class RedisDao {
 				byte[] bytes = jedis.get(key.getBytes());
 				if (bytes != null) {
 					Seckill seckill = schema.newMessage();
-					ProtostuffIOUtil.mergeFrom(bytes, seckill, schema);
+
 					//seckill 被反序列化
+					ProtostuffIOUtil.mergeFrom(bytes, seckill, schema);
 					return seckill;
 				}
 			} finally {
