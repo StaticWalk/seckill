@@ -64,6 +64,8 @@
     └─templates
             detail.html                      //秒杀详情页
             list.html                        //秒杀列表
+            
+         
 ```
 
 
